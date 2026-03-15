@@ -5,6 +5,7 @@
  */
 function sum(a, b) {
   // TODO: Implement this function.
+  return a+b;
 }
 
 /**
@@ -13,6 +14,7 @@ function sum(a, b) {
  */
 function reverseString(str) {
   // TODO: Implement this function.
+  return str.split("").reverse().join("");
 }
 
 /**
@@ -21,6 +23,10 @@ function reverseString(str) {
  */
 function findLargest(numbers) {
   // TODO: Implement this function.
+  if (numbers.length ===0){
+    return null;
+  }
+  return Math.max(...numbers);
 }
 
 /**
@@ -31,6 +37,9 @@ function findLargest(numbers) {
  */
 function isPalindrome(str) {
   // TODO: Implement this function.
+  const lowerstr=str.toLowerCase();
+  const reversed = lowerstr.split("").reverse().join("");
+  return lowerstr=== reversed;
 }
 
 /**
@@ -38,7 +47,8 @@ function isPalindrome(str) {
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
-  // TODO: Implement this function.
+  // TODO: Implement this function.'
+  return numbers.filter(num=>num%2===0);
 }
 
 
